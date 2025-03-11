@@ -1,0 +1,13 @@
+Flask
+gunicorn
+deepface
+tensorflow==2.17.1
+tensorflow-io-gcs-filesystem
+numpy
+opencv-python
+pandas
+werkzeug
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
