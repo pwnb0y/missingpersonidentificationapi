@@ -1,7 +1,8 @@
 Flask
 gunicorn
 deepface
-tensorflow==2.17.1
+tf-keras
+tensorflow==2.12
 tensorflow-io-gcs-filesystem
 numpy
 opencv-python
