@@ -103,7 +103,7 @@ if os.path.exists(ENCODINGS_FILE):
     with open(ENCODINGS_FILE, "rb") as f:
         known_encodings = pickle.load(f)
 
-@app.route("/update_encodings", methods=["GET"])
+@app.route("/update", methods=["GET"])
 def update_encodings():
     """Update encodings and upload to Google Drive."""
     global known_encodings
@@ -127,7 +127,7 @@ def update_encodings():
 
     return jsonify({"message": "Encodings updated, saved to Google Drive, and refreshed from Drive."})
 
-@app.route("/match_uploaded_face", methods=["POST"])
+@app.route("/match", methods=["POST"])
 def match_uploaded_face():
     """Match an uploaded face against known faces."""
     global known_encodings
